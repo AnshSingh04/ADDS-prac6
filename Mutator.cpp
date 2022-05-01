@@ -4,7 +4,6 @@
 #include <string>
 using namespace std;
 
-Mutator::Mutator(){}
 
 Individual *Mutator::mutate(Individual i,int k) {
     Individual *ptr;

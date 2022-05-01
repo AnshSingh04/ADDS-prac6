@@ -9,7 +9,6 @@ class Mutator {
     
     public:
     virtual Individual *mutate(Individual i,int k);
-    Mutator();
  
 };
 #endif
