@@ -5,7 +5,7 @@
 #include <random>
 using namespace std;
 
-Individual Rearrange::mutate(Individual i, int k) {
+Individual *Rearrange::mutate(Individual i, int k) {
     int pos=0;
     string start="",end="";
     string bit_list = i.getString();
@@ -21,6 +21,7 @@ Individual Rearrange::mutate(Individual i, int k) {
             start=start+bit_list[j];
     }
     string st=start+end;
-    Individual temp(st);
+    Individual *temp;
+    temp = new Individual(st);
     return temp;
 }

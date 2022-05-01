@@ -1,17 +1,16 @@
-#include "Individual.h"
+#include"Individual.h"
 #include"Mutator.h"
 #include"BitFlip.h"
 #include <iostream>
 #include <string>
-#include"BitFlipProb.h"
 #include"Rearrange.h"
 
 using namespace std;
+
 Individual * execute(Individual * indPtr, Mutator * mPtr, int k){   
-    Individual *p;
-    p = new Individual(1);
-    p = mPtr->mutate(indPtr,k);
-    return p;
+    Individual p(indPtr->getString());
+    indPtr = mPtr->mutate(p,k);
+    return indPtr;
 }
 
 int main(void){

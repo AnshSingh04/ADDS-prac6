@@ -9,7 +9,7 @@ BitFlipProb::BitFlipProb(double p) {
     prob = p;
 }
 
-Individual BitFlipProb::mutate(Individual i, int k) {
+Individual *BitFlipProb::mutate(Individual i, int k) {
     string bit_list = i.getString();
     for(int j=0;j<i.getLength();j++) {
         std::random_device rd;
@@ -23,6 +23,7 @@ Individual BitFlipProb::mutate(Individual i, int k) {
                 bit_list[j] = '1';
         }
     }
-    Individual temp(bit_list);
+    Individual *temp;
+    temp = new Individual(bit_list);
     return temp;
 }

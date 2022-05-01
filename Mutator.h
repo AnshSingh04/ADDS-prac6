@@ -7,8 +7,9 @@ using namespace std;
 
 class Mutator {
     
-    private:
-    virtual Individual mutate(Individual i,int k);
+    public:
+    virtual Individual *mutate(Individual i,int k);
+    Mutator();
  
 };
 #endif

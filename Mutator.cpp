@@ -4,6 +4,10 @@
 #include <string>
 using namespace std;
 
-Individual Mutator::mutate(Individual i,int k) {
-    return i;
+Mutator::Mutator(){}
+
+Individual *Mutator::mutate(Individual i,int k) {
+    Individual *ptr;
+    ptr = new Individual(1);
+    return ptr;
 }
