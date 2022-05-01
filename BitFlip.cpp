@@ -4,8 +4,6 @@
 #include <string>
 using namespace std;
 
-BitFlip::BitFlip(){}
-
 Individual* BitFlip::mutate(Individual i, int k) {
     int pos=0;
     if(k>i.getLength()) {

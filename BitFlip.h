@@ -9,7 +9,6 @@ class BitFlip: public Mutator {
     
     public:
     Individual *mutate(Individual i, int k);
-    BitFlip();
  
 };
 #endif
