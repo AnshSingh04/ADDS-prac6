@@ -6,9 +6,6 @@ using namespace std;
 
 class Individual {
     
-    private:
-    string binaryString;
-
     public:
     string getString();     //: The function outputs a binary string representation of the bitstring list (e.g.“01010100”).
     int getBit(int pos);    //: The function returns the bit value at position pos. It should return -1 if pos is out of bound..
@@ -17,6 +14,7 @@ class Individual {
     int getLength();        //: The function returns the length of the list.
     Individual(int length); //A constructor that takes in the length of the binary DNA and creates the binary string. Each binary value in the list should be given a value of 0 by default.
     Individual(string s); //A constructor that takes in a binary string and creates a new Individual with an identical list. Note that this involves creating a new copy of the list.
- 
+    string binaryString; 
+
 };
 #endif
