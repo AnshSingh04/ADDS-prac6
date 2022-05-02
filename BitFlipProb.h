@@ -8,7 +8,7 @@ using namespace std;
 class BitFlipProb: public Mutator {
     
     public:
-    Individual *mutate(Individual i,int k);
+    Individual *mutate(Individual *i,int k);
     BitFlipProb(double p);
     double prob;
  

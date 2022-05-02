@@ -1,14 +1,9 @@
 #ifndef Mutator_H
 #define Mutator_H
-#include <iostream>
-#include <vector>
 #include "Individual.h"
-using namespace std;
 
-class Mutator {
-    
+class Mutator {    
     public:
-    virtual Individual *mutate(Individual i,int k);
- 
+    virtual Individual * mutate(Individual *i,int k) = 0;
 };
 #endif

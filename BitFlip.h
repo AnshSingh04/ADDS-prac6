@@ -8,7 +8,7 @@ using namespace std;
 class BitFlip: public Mutator {
     
     public:
-    Individual *mutate(Individual i, int k);
+    Individual *mutate(Individual *i, int k);
  
 };
 #endif

@@ -8,6 +8,6 @@ using namespace std;
 class Rearrange: public Mutator {
     
     public:
-    Individual *mutate(Individual i,int k);
+    Individual *mutate(Individual *i,int k);
 };
 #endif
